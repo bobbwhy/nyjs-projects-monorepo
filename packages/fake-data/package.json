@@ -1,0 +1,30 @@
+{
+  "name": "@nyjs-projects-monorepo/fake-data",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Fake Data for All testing",
+  "author": "Robert LaMarca <robertlamarca@gmail.com>",
+  "homepage": "https://gitlab.com/rlamarca/mmdspy#readme",
+  "license": "UNLICENSED",
+  "main": "scripts/app.js",
+  "scripts": {
+    "fake:persons": "babel-node ./packages/fake-data/scripts/generate-fake-persons.js | ./node_modules/.bin/bunyan"
+  },
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/rlamarca/mmdspy.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "dependencies": {
+    "@nyjs-projects-monorepo/util": "^0.0.1"
+  }
+}
